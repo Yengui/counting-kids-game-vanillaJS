@@ -1,0 +1,152 @@
+body {
+    background-image: url(../images/bgimage.jpg);
+    background-size: 100%;
+}
+
+#game-container {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+td {
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+}
+
+#animal,#food {
+    height: 200px;
+    width: 200px;
+}
+
+a {
+    font-weight: 900;
+    font-size: 30px;
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+td img {
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+#score,#parcouru,#chemin {
+    color: red;
+    display: inline;
+}
+
+.stats {
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+}
+
+#gameInfo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#myGame {
+    display: none;
+}
+
+#welcomeScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    height: 235px;
+    background-color: white;
+    border: solid black;
+    padding: 30px;
+}
+
+#gameDescription, #winText, #loseText {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: royalblue;
+}
+
+#playButton {
+    border-radius: 30px;
+    width: 200px;
+    height: 58px;
+    font-size: 48px;
+    margin: auto;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    background-color: darkred;
+}
+
+#playButton:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#background {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    height: 235px;
+    background-color: white;
+    border: solid black;
+    opacity: 0.9;
+    padding: 10px;
+}
+
+#win {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#lose {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#winButton, #loseButton {
+    border-radius: 20px;
+    width: 300px;
+    height: 42px;
+    font-size: 36px;
+    margin: auto;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    background-color: darkred;
+}
+
+#winButton:hover, #loseButton:hover {
+    background-color: red;
+    cursor: pointer;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codes/style.css">
+    <script src="codes/code.js"></script>
+    <title>Projet Gaming 2020</title>
+</head>
+<body onload="onStart();">
+    <div id="welcomeScreen">
+        <div id="gameDescription">
+            Ce jeu est destiné pour les enfants entre 5 et 7 ans.
+            Pour gagner, il suffit de choisir le chemin le plus court
+            en cliquant sur le numéro du chemin correpondant.
+            Cliquer sur le bouton Jouer pour commencer le jeu
+        </div>
+        <br>
+        <br>
+        <div id="playButton" onclick="startPlaying();">
+            Jouer
+        </div>
+    </div>
+    <div id="background">
+    </div>
+    <div id="win">
+        <div id="winText">
+            Bravo! vous pouvez passer au niveau suivant
+        </div>
+        <br>
+        <br>
+        <div id="winButton" onclick="nextLevel();">
+            Niveau suivant
+        </div>
+    </div>
+    <div id="lose">
+        <div id="loseText">
+            Essayer de nouveau ?
+        </div>
+        <br>
+        <br>
+        <div id="loseButton" onclick="playAgain();">
+            Nouvel essai
+        </div>
+    </div>
+    <div id="myGame">
+        <div id="gameInfo">
+            <div class="stats">
+                Score: <div id="score">0</div>
+            </div>
+            <div class="stats">
+                Nombre de pas parcourus: <div id="parcouru">0</div>
+            </div>
+            <div class="stats">
+                Le chemin que tu as choisi : <div id="chemin"></div>
+            </div>
+        </div>
+        <div id="buttons">
+            <input type="button" value="jouer le son" id="bgMusicButton" onclick="playBackgroundMusic();">
+        </div>
+        <div id="game-container">
+            <img id="animal" src="">
+            <table id="theTable">
+            </table>
+            <img id="animalFinal" src="">
+            <img id="food" src="">
+        </div>
+    </div>
+</body>
+</html>
